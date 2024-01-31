@@ -1,325 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Egypt Tour</title>
 </head>
 <body>
-
-    <!-- Начало: Данный блок удалять нельзя -->
-    <div class="maketforfigma">
-        <a href="https://t.me/s/FigmaToHTML" target="_blank">
-            <img src="img/logo.png">
-        </a>
-        <div>
-            <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
-            </p>
-            <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
-            </p>
+    <header>
+        <div class="container">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div class="logo">
+                    <p>EgyptTour</p>
+                    <div class="header_search">
+                        <img src="./img/search.svg" alt="Search">
+                        <input 
+                            name="search"
+                            placeholder="Search">
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul class="nav_menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Inspiration</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <button class="orange_btn">Sign Up</button>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- Конец -->
-
-    <div class="main">
-        <header>
+    </header>
+        <div id="home">
+            <div class="home">
+                <h1>Find the Best<br>Egyptian Guide</h1>
+                <img src="./img/find_the_best_egyptian_guide.png" alt="Desert">
+            </div>
+        </div>
+        <div id="search">
             <div class="container">
-                <div style="display: flex; align-items: center; justify-content: space-between;">
-                    <div class="logo">
-                        <p>EgyptTour</p>
-                        <div class="header_search">
-                            <img src="./img/search.svg" alt="Search">
-                            <input 
-                                name="search"
-                                placeholder="Search">
-                        </div>
+                <div class="search_block">
+                    <div class="search_item">
+                        <p>Gender</p>
+                        <select name="gender" id="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
                     </div>
-                    <div class="nav">
-                        <ul class="nav_menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Guides</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Inspiration</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <button class="orange_btn">Sign Up</button>
-                        </ul>
+                    <div class="search_item">
+                        <p>Age</p>
+                        <select name="age" id="age">
+                            <option value="24+">24+</option>
+                            <option value="30+">30+</option>
+                            <option value="40+">40+</option>
+                        </select>
+                    </div>
+                    <div class="search_item">
+                        <p>Language</p>
+                        <select name="language" id="language">
+                            <option value="English, Arabic">English, Arabic</option>
+                            <option value="Russian, Arabic">Russian, Arabic</option>
+                        </select>
+                    </div>
+                    <div class="search_item" style="border: 0;">
+                        <p>Localisation</p>
+                        <select name="localisation" id="localisation">
+                            <option value="Cairo">Cairo</option>
+                            <option value="Giza">Giza</option>
+                        </select>
+                    </div>
+                    <button class="orange_btn">Search</button>
+                </div>
+            </div>
+        </div>
+        <div id="guides">
+            <div class="container">
+                <div class="guides_title">
+                    <h2>Guides for you!</h2>
+                    <button class="orange_btn">See All Guides</button>
+                </div>
+                <div class="guides_block">
+                    <div class="guides_item">
+                        <img class="avatar" src="./img/Screenshot_5 1.png" alt="Umar">
+                        <h3>Abayomi Mallik</h3>
+                        <div class="stars">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                        </div>
+                        <div class="stars">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                        </div>
+                        <p>1000+ reviews</p>
+                    </div>
+                    <div class="guides_item">
+                        <img class="avatar" src="./img/young-girl-red-dress-visiting-egyptian-temple-nefertari-near-abu-simbel 1.png" alt="Dasha">
+                        <h3>Berenike Eman</h3>
+                        <div class="stars">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                        </div>
+                        <div class="stars">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                        </div>
+                        <p>1000+ reviews</p>
+                    </div>
+                    <div class="guides_item">
+                        <img class="avatar" src="./img/or-hakim-kfZA0rbiG_s-unsplash.png" alt="Artur">
+                        <h3>Abu Bakar</h3>
+                        <div class="stars">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                        </div>
+                        <div class="stars">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                        </div>
+                        <p>1000+ reviews</p>
+                    </div>
+                    <div class="guides_item">
+                        <img class="avatar" src="./img/beautiful-young-woman-wearing-egyptian-traditional-dress-foreign-culture 1.png" alt="Vera">
+                        <h3>Dendera Heba</h3>
+                        <div class="stars">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                            <img src="./img/bxs-star 5.svg" alt="">
+                        </div>
+                        <div class="stars">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                            <img src="./img/bxs-star 1.svg" alt="">
+                        </div>
+                        <p>1000+ reviews</p>
                     </div>
                 </div>
             </div>
-        </header>
-            <div id="home">
-                <div class="home">
-                    <h1>Find the Best<br>Egyptian Guide</h1>
-                    <img src="./img/find_the_best_egyptian_guide.png" alt="Desert">
-                </div>
-            </div>
-            <div id="search">
-                <div class="container">
-                    <div class="search_block">
-                        <div class="search_item">
-                            <p>Gender</p>
-                            <select name="gender" id="gender">
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
+        </div>
+        <div id="how_does_it_work">
+            <div class="container">
+                <div class="works">
+                    <h2>How does it Work?</h2>
+                    <div class="works_block">
+                        <div class="works_item">
+                            <img src="./img/sel_guide.svg" alt="Select a guide">
+                            <h3>Select a Guide</h3>
                         </div>
-                        <div class="search_item">
-                            <p>Age</p>
-                            <select name="age" id="age">
-                                <option value="24+">24+</option>
-                                <option value="30+">30+</option>
-                                <option value="40+">40+</option>
-                            </select>
+                        <div class="works_item">
+                            <img src="./img/cont_guide.svg" alt="Contact guide">
+                            <h3>Contact Guide</h3>
                         </div>
-                        <div class="search_item">
-                            <p>Language</p>
-                            <select name="language" id="language">
-                                <option value="English, Arabic">English, Arabic</option>
-                                <option value="Russian, Arabic">Russian, Arabic</option>
-                            </select>
-                        </div>
-                        <div class="search_item" style="border: 0;">
-                            <p>Localisation</p>
-                            <select name="localisation" id="localisation">
-                                <option value="Cairo">Cairo</option>
-                                <option value="Giza">Giza</option>
-                            </select>
-                        </div>
-                        <button class="orange_btn">Search</button>
-                    </div>
-                </div>
-            </div>
-            <div id="guides">
-                <div class="container">
-                    <div class="guides_title">
-                        <h2>Guides for you!</h2>
-                        <button class="orange_btn">See All Guides</button>
-                    </div>
-                    <div class="guides_block">
-                        <div class="guides_item">
-                            <img class="avatar" src="./img/Screenshot_5 1.png" alt="Umar">
-                            <h3>Abayomi Mallik</h3>
-                            <div class="stars">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                            </div>
-                            <div class="stars">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                            </div>
-                            <p>1000+ reviews</p>
-                        </div>
-                        <div class="guides_item">
-                            <img class="avatar" src="./img/young-girl-red-dress-visiting-egyptian-temple-nefertari-near-abu-simbel 1.png" alt="Dasha">
-                            <h3>Berenike Eman</h3>
-                            <div class="stars">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                            </div>
-                            <div class="stars">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                            </div>
-                            <p>1000+ reviews</p>
-                        </div>
-                        <div class="guides_item">
-                            <img class="avatar" src="./img/or-hakim-kfZA0rbiG_s-unsplash.png" alt="Artur">
-                            <h3>Abu Bakar</h3>
-                            <div class="stars">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                            </div>
-                            <div class="stars">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                            </div>
-                            <p>1000+ reviews</p>
-                        </div>
-                        <div class="guides_item">
-                            <img class="avatar" src="./img/beautiful-young-woman-wearing-egyptian-traditional-dress-foreign-culture 1.png" alt="Vera">
-                            <h3>Dendera Heba</h3>
-                            <div class="stars">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                                <img src="./img/bxs-star 5.svg" alt="">
-                            </div>
-                            <div class="stars">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                                <img src="./img/bxs-star 1.svg" alt="">
-                            </div>
-                            <p>1000+ reviews</p>
+                        <div class="works_item">
+                            <img src="./img/create_travel.svg" alt="Create your travel">
+                            <h3>Create travel</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="how_does_it_work">
-                <div class="container">
-                    <div class="works">
-                        <h2>How does it Work?</h2>
-                        <div class="works_block">
-                            <div class="works_item">
-                                <img src="./img/sel_guide.svg" alt="Select a guide">
-                                <h3>Select a Guide</h3>
-                            </div>
-                            <div class="works_item">
-                                <img src="./img/cont_guide.svg" alt="Contact guide">
-                                <h3>Contact Guide</h3>
-                            </div>
-                            <div class="works_item">
-                                <img src="./img/create_travel.svg" alt="Create your travel">
-                                <h3>Create travel</h3>
-                            </div>
+        </div>
+        <div id="for_guides">
+            <div class="for_guides">
+                <h1>Are you a Tourist<br>Guide in Egypt?</h1>
+                <img src="./img/katerina-kerdi-unsplash_1.png" alt="">
+            </div>
+        </div>
+        <div id="join">
+            <div class="container">
+                <div class="join_block">
+                    <div>
+                        <h3>Be referenced on our site, <br><span style="color: #FF5029;">it's 100% free!</span></h3>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <button class="orange_btn">I am a Tourist Guide</button>
+                        <div style="display: flex; padding: 25px 0 0 0;">
+                            <img src="./img/Ellipse6.png" alt="">
+                            <img src="./img/Ellipse7.png" alt="">
+                            <img src="./img/Ellipse8.png" alt="">
+                            <img src="./img/Ellipse9.png" alt="">
+                            <span style="margin-left: 15px;"><span style="color: #FF5029;">1000+</span> tourist<br>join us</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="for_guides">
-                <div class="for_guides">
-                    <h1>Are you a Tourist<br>Guide in Egypt?</h1>
-                    <img src="./img/katerina-kerdi-unsplash_1.png" alt="">
-                </div>
-            </div>
-            <div id="join">
-                <div class="container">
-                    <div class="join_block">
-                        <div>
-                            <h3>Be referenced on our site, <br><span style="color: #FF5029;">it's 100% free!</span></h3>
-                        </div>
-                        <div style="display: flex; flex-direction: column;">
-                            <button class="orange_btn">I am a Tourist Guide</button>
-                            <div style="display: flex; padding: 25px 0 0 0;">
-                                <img src="./img/Ellipse6.png" alt="">
-                                <img src="./img/Ellipse7.png" alt="">
-                                <img src="./img/Ellipse8.png" alt="">
-                                <img src="./img/Ellipse9.png" alt="">
-                                <span style="margin-left: 15px;"><span style="color: #FF5029;">1000+</span> tourist<br>join us</span>
+        </div>
+        <div id="about">
+            <div class="container">
+                <h2>Learn more About Egypt</h2>
+                <div class="about_block">
+                    <a href="#">
+                        <div class="about_item">
+                            <img src="./img/valeriia-bugaiova-_pPHgeHz1uk-unsplash.png" alt="">
+                            <div style="margin-top: 40px;">
+                                <span class="rose">Hotel</span>
+                                <div class="about_discr">
+                                    <p>Where to sleep in<br>Luxor? <img src="./img/arrow-up-right.svg" alt=""></p>
+                                    
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div id="about">
-                <div class="container">
-                    <h2>Learn more About Egypt</h2>
-                    <div class="about_block">
+                    </a>
+                    <div style="display: flex; flex-direction: column; justify-content: space-between;">
                         <a href="#">
-                            <div class="about_item">
-                                <img src="./img/valeriia-bugaiova-_pPHgeHz1uk-unsplash.png" alt="">
-                                <div style="margin-top: 40px;">
-                                    <span class="rose">Hotel</span>
+                            <div class="about_item_small">
+                                <img src="./img/nadja-KqJMh27dcnU-unsplash.png" alt="">
+                                <div style="margin-left: 30px;">
+                                    <span class="rose">Restaurant</span>
                                     <div class="about_discr">
-                                        <p>Where to sleep in<br>Luxor? <img src="./img/arrow-up-right.svg" alt=""></p>
-                                        
+                                        <p>5 restaurant in<br>Cairo
+                                            <img src="./img/arrow-up-right.svg" alt=""></p>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <div style="display: flex; flex-direction: column; justify-content: space-between;">
-                            <a href="#">
-                                <div class="about_item_small">
-                                    <img src="./img/nadja-KqJMh27dcnU-unsplash.png" alt="">
-                                    <div style="margin-left: 30px;">
-                                        <span class="rose">Restaurant</span>
-                                        <div class="about_discr">
-                                            <p>5 restaurant in<br>Cairo
-                                                <img src="./img/arrow-up-right.svg" alt=""></p>
-                                        </div>
+                        <a href="#">
+                            <div class="about_item_small">
+                                <img src="./img/spencer-davis-ONVA6s03hg8-unsplash.png" alt="">
+                                <div style="margin-left: 30px;">
+                                    <span class="rose">Advance & Tip</span>
+                                    <div class="about_discr">
+                                        <p>Is Egypt<br>dangerous? <img src="./img/arrow-up-right.svg" alt=""></p>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#">
-                                <div class="about_item_small">
-                                    <img src="./img/spencer-davis-ONVA6s03hg8-unsplash.png" alt="">
-                                    <div style="margin-left: 30px;">
-                                        <span class="rose">Advance & Tip</span>
-                                        <div class="about_discr">
-                                            <p>Is Egypt<br>dangerous? <img src="./img/arrow-up-right.svg" alt=""></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-        <footer id="footer">
-            <div class="container">
-                <div class="footer_content">
-                    <div class="company">
-                        <h2>EgyptTour</h2>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    </div>
-                    <div class="links">
-                        <h3>Useful Links</h3>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Guide</a></li>
-                            <li><a href="#">Inspiration</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="resources">
-                        <h3>Resources</h3>
-                        <ul>
-                            <li><a href="#">Become a guide</a></li>
-                            <li><a href="#">Legal</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                    </div>
-                    <div class="contacts">
-                        <h3>Contacts</h3>
-                        <ul>
-                            <li><a href="mailto:infomail@gmail.com"><img class="contacts_mail" src="./img/mail.svg" alt="Mail">infomail@gmail.com</a></li>
-                            <li><a href="#"><img class="contacts_map" src="./img/map-pin.svg" alt="Map">48 Street Road, Cairo</a></li>
-                        </ul>
-                        <div class="socials">
-                            <img src="./img/facebook.svg" alt="Facebook">
-                            <img src="./img/twitter.svg" alt="Twitter">
-                            <img src="./img/instagram.svg" alt="Instagram">
-                            <img src="./img/linkedin.svg" alt="LinkedIn">
-                        </div>
-                    </div>
+        </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer_content">
+                <div class="company">
+                    <h2>EgyptTour</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 </div>
-                <div class="privacy">
-                    <div>
-                        <p>&#169; 2022 <a href="#">EgyptTour</a></p>
-                    </div>
-                    <div>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#" style="margin-left: 30px;">Term of Condition</a>
+                <div class="links">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Guide</a></li>
+                        <li><a href="#">Inspiration</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Become a guide</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h3>Contacts</h3>
+                    <ul>
+                        <li><a href="mailto:infomail@gmail.com"><img class="contacts_mail" src="./img/mail.svg" alt="Mail">infomail@gmail.com</a></li>
+                        <li><a href="#"><img class="contacts_map" src="./img/map-pin.svg" alt="Map">48 Street Road, Cairo</a></li>
+                    </ul>
+                    <div class="socials">
+                        <img src="./img/facebook.svg" alt="Facebook">
+                        <img src="./img/twitter.svg" alt="Twitter">
+                        <img src="./img/instagram.svg" alt="Instagram">
+                        <img src="./img/linkedin.svg" alt="LinkedIn">
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
-
+            <div class="privacy">
+                <div>
+                    <p>&#169; 2022 <a href="#">EgyptTour</a></p>
+                </div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#" style="margin-left: 30px;">Term of Condition</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
